@@ -53,50 +53,55 @@ public class App
 
 
 
-//        System.out.println(carReference.totalTraveledDistance);
-//        System.out.println(carReference.doorCount);
-//        System.out.println(carReference.damaged);
-//
-//        System.out.println(carReference);
-//
-//        Car car2 = new Car();
-//        car2.make = "Mercedes";
-//        car2.model ="CLS";
-//        car2.color ="black";
-//
-//        car2.make = carReference.make;
-//
-//
-//
-//
-//
-//
-//
-//
-//        //concatenation ;alaturarea mai multor stringuri
-//
-//        System.out.println(car2.make + " " + carReference.make);
-//
-//        System.out.println("Car 2 make: " + car2.make);
-//        System.out.println("CarReference make: " + carReference.make);
-//
-//        car2 = carReference;
-//
-//        System.out.println("Initial name");
-//
-//        System.out.println(car2.make);
-//        System.out.println(carReference.make);
-//
-//        car2.make ="Audi";
-//
-//        System.out.println("Updated name");
-//
-//
-//        System.out.println(car2.make);
-//        System.out.println(carReference.make);
 
-      //  car2 = null;
-      //  System.out.println(car2.make);
+
+        System.out.println(carReference.totalTraveledDistance);
+        System.out.println(carReference.doorCount);
+        System.out.println(carReference.damaged);
+
+        System.out.println(carReference);
+
+        Car car2 = new Car();
+        car2.make = "Mercedes";
+        car2.model ="CLS";
+        car2.color ="black";
+
+        car2.make = carReference.make;
+
+
+
+
+
+
+
+
+        //concatenation ;alaturarea mai multor stringuri
+
+        System.out.println(car2.make + " " + carReference.make);
+
+        System.out.println("Car 2 make: " + car2.make);
+        System.out.println("CarReference make: " + carReference.make);
+
+        car2 = carReference;
+
+        System.out.println("Initial name");
+
+        System.out.println(car2.make);
+        System.out.println(carReference.make);
+
+        car2.make ="Audi";
+
+        System.out.println("Updated name");
+
+
+        System.out.println(car2.make);
+        System.out.println(carReference.make);
+
+//        car2 = null;
+//        System.out.println(car2.make);
+
+
+
 
 
     }

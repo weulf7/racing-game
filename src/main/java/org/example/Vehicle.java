@@ -12,5 +12,11 @@ public class Vehicle  {
     double maxSpeed;
     double totalTraveledDistance;
     boolean damaged;
+
+    public double accelerate(double speed , double durationInHours){
+        System.out.println("Accelerating");
+
+        return 10.9;
+    }
 }
 
