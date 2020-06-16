@@ -101,7 +101,13 @@ public class App
 //        car2 = null;
 //        System.out.println(car2.make);
 
-
+//        System.out.println("Modulo (modulus) examples : ");
+//        System.out.println(4 % 2);
+//        System.out.println(4 % 3);
+//
+//        System.out.println("Is 5 even?");
+//
+//        System.out.println(5 % 2 == 0);
 
 
 
