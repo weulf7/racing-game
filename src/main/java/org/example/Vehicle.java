@@ -16,6 +16,24 @@ public class Vehicle  {
     public double accelerate(double speed , double durationInHours){
         System.out.println(make + " is accelerating with " + " " + speed + " km/h " + " for " + durationInHours + " h");
 
+        if (speed > maxSpeed){
+            System.out.println("Max speed exceeded");
+            return 0;
+            }
+          else if (speed == maxSpeed){
+            System.out.println("Careful!Max speed reached!");
+
+        }
+          else {
+            System.out.println("Valid speed entered.");
+        }
+
+          if (damaged){
+              System.out.println("Your car has been damaged");
+              return 0;
+          }
+
+
         double distance = speed * durationInHours;
 
 //        totalTraveledDistance += distance;

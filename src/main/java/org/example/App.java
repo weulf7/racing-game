@@ -84,25 +84,25 @@ public class App
 
         //concatenation ;alaturarea mai multor stringuri
 
-        System.out.println(car2.make + " " + carReference.make);
-
-        System.out.println("Car 2 make: " + car2.make);
-        System.out.println("CarReference make: " + carReference.make);
-
-        car2 = carReference;
-
-        System.out.println("Initial name");
-
-        System.out.println(car2.make);
-        System.out.println(carReference.make);
-
-        car2.make ="Audi";
-
-        System.out.println("Updated name");
-
-
-        System.out.println(car2.make);
-        System.out.println(carReference.make);
+//        System.out.println(car2.make + " " + carReference.make);
+//
+//        System.out.println("Car 2 make: " + car2.make);
+//        System.out.println("CarReference make: " + carReference.make);
+//
+//        car2 = carReference;
+//
+//        System.out.println("Initial name");
+//
+//        System.out.println(car2.make);
+//        System.out.println(carReference.make);
+//
+//        car2.make ="Audi";
+//
+//        System.out.println("Updated name");
+//
+//
+//        System.out.println(car2.make);
+//        System.out.println(carReference.make);
 
 //        car2 = null;
 //        System.out.println(car2.make);
