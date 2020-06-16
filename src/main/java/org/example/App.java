@@ -44,7 +44,7 @@ public class App
 
         carReference.engine = engine1;
 
-        engine1.capacity= 2000;
+//        engine1.capacity= 2000;
 
 //        System.out.println(carReference.engine.capacity);
 //
@@ -52,6 +52,12 @@ public class App
 
 
         double currentDistance = carReference.accelerate(100, 1);
+
+        System.out.println("Total distance before repair: " +carReference.totalTraveledDistance);
+        Mechanic mechanic = new Mechanic();
+        mechanic.repair(carReference);
+
+        System.out.println("Total distance after repair : " +carReference.totalTraveledDistance);
 
 
 //        System.out.println(carReference.totalTraveledDistance);
