@@ -14,9 +14,27 @@ public class Vehicle  {
     boolean damaged;
 
     public double accelerate(double speed , double durationInHours){
-        System.out.println("Accelerating");
+        System.out.println(make + " is accelerating with " + " " + speed + " km/h " + " for " + durationInHours + " h");
 
-        return 10.9;
+        double distance = speed * durationInHours;
+
+//        totalTraveledDistance += distance;
+
+        totalTraveledDistance = totalTraveledDistance +distance;
+
+
+
+        System.out.println("Total traveled distance: " +totalTraveledDistance);
+
+        double usedFuel = distance * mileage / 100;
+
+        fuelLevel -= usedFuel;
+
+
+
+        System.out.println("Remaining fuel: " + fuelLevel);
+
+        return distance;
     }
 }
 

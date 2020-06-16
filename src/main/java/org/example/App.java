@@ -46,25 +46,26 @@ public class App
 
         engine1.capacity= 2000;
 
-        System.out.println(carReference.engine.capacity);
-
-        System.out.println(carReference.engine.capacity + " " + engine1.capacity);
-
-
+//        System.out.println(carReference.engine.capacity);
+//
+//        System.out.println(carReference.engine.capacity + " " + engine1.capacity);
 
 
+        double currentDistance = carReference.accelerate(100, 1);
 
 
-        System.out.println(carReference.totalTraveledDistance);
-        System.out.println(carReference.doorCount);
-        System.out.println(carReference.damaged);
-
-        System.out.println(carReference);
+//        System.out.println(carReference.totalTraveledDistance);
+//        System.out.println(carReference.doorCount);
+//        System.out.println(carReference.damaged);
+//
+//        System.out.println(carReference);
 
         Car car2 = new Car();
         car2.make = "Mercedes";
         car2.model ="CLS";
         car2.color ="black";
+
+        double car2Distance = car2.accelerate(120, 3);
 
         car2.make = carReference.make;
 
