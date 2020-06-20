@@ -11,19 +11,28 @@ public class App
 
     public static void main(String[] args )
     {
-        System.out.println( "Welcome to the Racing Game" );
+        Game game = new Game();
+        game.start();
+
+//
+//        Engine engine = new Engine();
+//        engine.manufacturer="Renault";
+//
+//        Car car = new Car(engine);
+//        car.make = "Dacia";
+//        System.out.println(car.make);
 
         //Instantiation
 
-        Car carReference = new Car();
-        carReference.make = "Skoda";
-        carReference.model = "Fabia";
-        carReference.mileage = 7.5;
-        carReference.color = "green";
-        carReference.fuelLevel = 60;
-        carReference.maxSpeed = 300;
+//        Car carReference = new Car();
+//        carReference.make = "Skoda";
+//        carReference.model = "Fabia";
+//        carReference.mileage = 7.5;
+//        carReference.color = "green";
+//        carReference.fuelLevel = 60;
+//        carReference.maxSpeed = 300;
 
-        System.out.println("\uD83D\uDE97");
+
 
 //        System.out.println(carReference.make);
 //        System.out.println(carReference.model);
@@ -38,11 +47,11 @@ public class App
 //        carReference.engine.capacity= 1900;
 //        System.out.println(carReference.engine.capacity);
 
-        Engine engine1 = new Engine();
-        engine1.manufacturer = "VW";
-        engine1.capacity = 1900;
+//        Engine engine1 = new Engine();
+//        engine1.manufacturer = "VW";
+//        engine1.capacity = 1900;
 
-        carReference.engine = engine1;
+//        carReference.engine = engine1;
 
 //        engine1.capacity= 2000;
 
@@ -51,13 +60,13 @@ public class App
 //        System.out.println(carReference.engine.capacity + " " + engine1.capacity);
 
 
-        double currentDistance = carReference.accelerate(100, 1);
-
-        System.out.println("Total distance before repair: " +carReference.totalTraveledDistance);
-        Mechanic mechanic = new Mechanic();
-        mechanic.repair(carReference);
-
-        System.out.println("Total distance after repair : " +carReference.totalTraveledDistance);
+//        double currentDistance = carReference.accelerate(100, 1);
+//
+//        System.out.println("Total distance before repair: " +carReference.totalTraveledDistance);
+//        Mechanic mechanic = new Mechanic();
+//        mechanic.repair(carReference);
+//
+//        System.out.println("Total distance after repair : " +carReference.totalTraveledDistance);
 
 
 //        System.out.println(carReference.totalTraveledDistance);
@@ -66,14 +75,14 @@ public class App
 //
 //        System.out.println(carReference);
 
-        Car car2 = new Car();
-        car2.make = "Mercedes";
-        car2.model ="CLS";
-        car2.color ="black";
-
-        double car2Distance = car2.accelerate(120, 3);
-
-        car2.make = carReference.make;
+//        Car car2 = new Car();
+//        car2.make = "Mercedes";
+//        car2.model ="CLS";
+//        car2.color ="black";
+//
+//        double car2Distance = car2.accelerate(120, 3);
+//
+//        car2.make = carReference.make;
 
 
 

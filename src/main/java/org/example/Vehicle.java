@@ -33,11 +33,8 @@ public class Vehicle  {
               return 0;
           }
 
-
+        //local variables
         double distance = speed * durationInHours;
-
-//        totalTraveledDistance += distance;
-
         totalTraveledDistance = totalTraveledDistance +distance;
 
 
@@ -53,6 +50,12 @@ public class Vehicle  {
         System.out.println("Remaining fuel: " + fuelLevel);
 
         return distance;
+    }
+    public void makeSound(){
+        System.out.println("Make way!!!");
+
+        double number = 0;
+        System.out.println(number);
     }
 }
 
