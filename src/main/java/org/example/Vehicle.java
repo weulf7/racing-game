@@ -1,5 +1,7 @@
 package org.example;
 
+
+
 public class Vehicle  {
 
     //Instance variables
@@ -41,8 +43,15 @@ public class Vehicle  {
 
         System.out.println("Total traveled distance: " +totalTraveledDistance);
 
-        double usedFuel = distance * mileage / 100;
 
+        //use more fuel if speed>120km
+        double mileageMultiplier = 1;
+        if (speed >120){
+            mileageMultiplier*= speed / 100;
+        }
+
+
+        double usedFuel = distance * mileage / 100;
         fuelLevel -= usedFuel;
 
 
