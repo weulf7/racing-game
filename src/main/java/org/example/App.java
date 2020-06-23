@@ -14,6 +14,22 @@ public class App
         Game game = new Game();
         game.start();
 
+//        Vehicle vehicle1 = new Vehicle();
+////        vehicle1.totalVehicleCount = 1;
+//
+//        Vehicle vehicle2 = new Vehicle();
+//
+//        Vehicle vehicle3 = new Vehicle();
+//
+//        Vehicle vehicle4 = new Vehicle();
+//
+//        Vehicle vehicle5 = new Vehicle();
+////        vehicle2.totalVehicleCount = 4;
+//
+//        System.out.println("Total count from vehicle 1 : "+ vehicle1.totalVehicleCount);
+//        System.out.println("Total count from vehicle 1 : "+ vehicle2.totalVehicleCount);
+//        System.out.println("Total count from Vehicle class : "+ Vehicle.totalVehicleCount);
+
 
 //        //String pool
 //        String a = "string";

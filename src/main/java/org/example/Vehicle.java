@@ -4,6 +4,11 @@ package org.example;
 
 public class Vehicle  {
 
+
+    //class variable/static variable
+    static int totalVehicleCount;
+
+
     //Instance variables
 
     String make;
@@ -14,6 +19,10 @@ public class Vehicle  {
     double maxSpeed;
     double totalTraveledDistance;
     boolean damaged;
+
+    public Vehicle() {
+        totalVehicleCount++;
+    }
 
     public double accelerate(double speed , double durationInHours){
         System.out.println(make + " is accelerating with " + " " + speed + " km/h " + " for " + durationInHours + " h");
