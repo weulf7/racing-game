@@ -14,6 +14,15 @@ public class App
         Game game = new Game();
         game.start();
 
+
+//        //String pool
+//        String a = "string";
+//        //String literals
+//        String b ="string";
+//        String c=new String("string");
+//        System.out.println("a=b is " +(a ==b));
+//        System.out.println("a=c is " + (a.equals(c)));
+
 //
 //        Engine engine = new Engine();
 //        engine.manufacturer="Renault";
