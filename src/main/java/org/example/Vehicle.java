@@ -24,6 +24,11 @@ public class Vehicle  {
         totalVehicleCount++;
     }
 
+    //method overloading
+    public double accelerate(double speed){
+        return accelerate(speed,1);
+    }
+
     public double accelerate(double speed , double durationInHours){
         System.out.println(make + " is accelerating with " + " " + speed + " km/h " + " for " + durationInHours + " h");
 
