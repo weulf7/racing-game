@@ -6,19 +6,19 @@ public class Vehicle  {
 
 
     //class variable/static variable
-    static int totalVehicleCount;
+    private static int totalVehicleCount;
 
 
     //Instance variables
 
-    String make;
-    String model;
-    String color;
-    double mileage;
-    double fuelLevel;
-    double maxSpeed;
-    double totalTraveledDistance;
-    boolean damaged;
+    private String make;
+    private String model;
+    private String color;
+    private double mileage;
+    private double fuelLevel;
+    private double maxSpeed;
+    private double totalTraveledDistance;
+    private boolean damaged;
 
     public Vehicle() {
         totalVehicleCount++;
@@ -54,10 +54,10 @@ public class Vehicle  {
 
 
         //use more fuel if speed>120km
-        double mileageMultiplier = 1;
-        if (speed >120){
-            mileageMultiplier*= speed / 100;
-        }
+//        double mileageMultiplier = 1;
+//        if (speed >120){
+//            mileageMultiplier*= speed / 100;
+//        }
 
 
         double usedFuel = distance * mileage / 100;
@@ -72,8 +72,75 @@ public class Vehicle  {
     public void makeSound(){
         System.out.println("Make way!!!");
 
-        double number = 0;
-        System.out.println(number);
+
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
+    }
+
+    public double getFuelLevel() {
+        return fuelLevel;
+    }
+
+    public void setFuelLevel(double fuelLevel) {
+        this.fuelLevel = fuelLevel;
+    }
+
+    public double getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(double maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public double getTotalTraveledDistance() {
+        return totalTraveledDistance;
+    }
+
+    public void setTotalTraveledDistance(double totalTraveledDistance) {
+        this.totalTraveledDistance = totalTraveledDistance;
+    }
+
+    public boolean isDamaged() {
+        return damaged;
+    }
+
+    public void setDamaged(boolean damaged) {
+        this.damaged = damaged;
+    }
+    //read-only variable
+    public static int getTotalVehicleCount() {
+        return totalVehicleCount;
     }
 }
 
