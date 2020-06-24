@@ -20,4 +20,12 @@ public class CheatingVehicle extends Vehicle {
       setTotalTraveledDistance(getTotalTraveledDistance()*2);
     }
 
+
+    //co-variant return type
+    //overriding method can be more permissive
+    @Override
+    public CheatingVehicle reset() {
+        super.reset();
+        return this;
+    }
 }

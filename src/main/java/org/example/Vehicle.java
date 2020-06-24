@@ -74,6 +74,15 @@ public class Vehicle  {
 
         return distance;
     }
+    protected Vehicle reset(){
+        totalTraveledDistance = 0;
+        damaged = false;
+        fuelLevel = 0;
+        return this;
+    }
+
+
+
     public void makeSound(){
         System.out.println("Make way!!!");
 
