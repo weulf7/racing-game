@@ -18,7 +18,13 @@ public class App
         Game game = new Game();
         game.start();
 
-
+//        Vehicle vehicle = new Vehicle();
+//        vehicle.setMake("VW");
+//        vehicle.setModel("Golf");
+//        vehicle.setColor("Red");
+//
+//
+//        System.out.println("Total vechicle count: " +Vehicle.getTotalVehicleCount());
 
 //        Vehicle vehicle1 = new Vehicle();
 ////        vehicle1.totalVehicleCount = 1;
