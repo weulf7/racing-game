@@ -15,16 +15,29 @@ public class App
 
     public static void main(String[] args )
     {
-        Game game = new Game();
-        game.start();
+//        Game game = new Game();
+//        game.start();
 
 
 
-//        Vehicle vehicle = new Vehicle();
-//        vehicle.setMake("VW");
-//        vehicle.setModel("Golf");
-//        vehicle.setColor("Red");
-//
+        CheatingVehicle vehicle1 = new CheatingVehicle();
+        vehicle1.setMake("VW");
+        vehicle1.setModel("Golf");
+        vehicle1.setColor("Red");
+
+        vehicle1.accelerate(60,1);
+
+        System.out.println(vehicle1.totalTraveledDistance);
+        System.out.println(vehicle1);
+
+        Car car = new Car();
+        car.setDoorCount(4);
+        car.setMake("VW");
+        car.setModel("Goldf");
+        car.setColor("Red");
+        System.out.println(car);
+
+
 //
 //        System.out.println("Total vechicle count: " +Vehicle.getTotalVehicleCount());
 

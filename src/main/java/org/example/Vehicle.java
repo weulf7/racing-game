@@ -17,7 +17,7 @@ public class Vehicle  {
     private double mileage;
     private double fuelLevel;
     private double maxSpeed;
-    private double totalTraveledDistance;
+    protected double totalTraveledDistance;
     private boolean damaged;
 
     public Vehicle() {
@@ -146,6 +146,20 @@ public class Vehicle  {
     //read-only variable
     public static int getTotalVehicleCount() {
         return totalVehicleCount;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", mileage=" + mileage +
+                ", fuelLevel=" + fuelLevel +
+                ", maxSpeed=" + maxSpeed +
+                ", totalTraveledDistance=" + totalTraveledDistance +
+                ", damaged=" + damaged +
+                '}';
     }
 }
 
