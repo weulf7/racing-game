@@ -10,6 +10,16 @@ public class App {
     public static void main(String[] args) {
         Game game = new Game();
         game.start();
+
+
+//        List<Integer>integerList;
+//
+//        //auto-boxing
+//        Integer integer = 1;
+//
+//        //auto-unboxing
+//        int intPirmitive = integer;
+
 //        Map<String,String>descriptionTranslation = new HashMap<>();
 //        descriptionTranslation.put("en","Some description");
 //        descriptionTranslation.put("ro","O descriere");
