@@ -1,12 +1,12 @@
-package org.example;
+package org.fasttrackit.domain.vehicle;
 
 import java.time.LocalDate;
 
 public class Engine {
+
     String manufacturer;
     int capacity;
-
-    LocalDate manufacturingDate=LocalDate.now();
+    LocalDate manufacturingDate = LocalDate.now();
 
     public String getManufacturer() {
         return manufacturer;
@@ -32,4 +32,3 @@ public class Engine {
         this.manufacturingDate = manufacturingDate;
     }
 }
-

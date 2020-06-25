@@ -1,18 +1,16 @@
-package org.example;
+package org.fasttrackit.domain.vehicle;
 
-//"is-a relationship (inheritance)"
+// "is-a" relationship (inheritance)
 public class Car extends AutoVehicle {
 
-
     private int doorCount;
-
 
     public Car(Engine engine) {
         super(engine);
     }
 
-    //constructor overloading
-    public Car(){
+    // constructor overloading
+    public Car() {
         this(new Engine());
     }
 
