@@ -2,10 +2,16 @@ package org.fasttrackit.service;
 
 import org.fasttrackit.controller.StandardInputController;
 import org.fasttrackit.domain.Track;
+import org.fasttrackit.domain.vehicle.Vehicle;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Game {
 
     private Track[] tracks = new Track[3];
+    private List<Vehicle> competitors = new ArrayList<>();
 
     private StandardInputController controller = new StandardInputController();
 
@@ -13,14 +19,30 @@ public class Game {
         System.out.println("Welcome to the Racing Game!");
         System.out.println("\uD83D\uDE97");
 
-        int playerCount = controller.getPlayerCountFromUser();
-        System.out.println("Player count: " + playerCount);
-
         initializeTracks();
 
         Track selectedTrack = getSelectedTrack();
-
         System.out.println("You have selected: " + selectedTrack.getName());
+
+        initializeCompetitors();
+
+        System.out.println(competitors);
+    }
+
+    private void initializeCompetitors() {
+        int playerCount = controller.getPlayerCountFromUser();
+
+        for (int i = 1; i <= playerCount; i++) {
+            System.out.println("Preparing player " + i + " for the race...");
+
+            Vehicle vehicle = new Vehicle();
+            vehicle.setMake(controller.getVehicleMakeFromUser());
+            vehicle.setFuelLevel(30);
+            vehicle.setMaxSpeed(300);
+            vehicle.setMileage(ThreadLocalRandom.current().nextDouble(9, 15));
+
+            competitors.add(vehicle);
+        }
     }
 
     private Track getSelectedTrack() {
