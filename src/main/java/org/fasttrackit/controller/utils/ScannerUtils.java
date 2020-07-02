@@ -14,10 +14,12 @@ public class ScannerUtils {
 
     public static double readNExtSingleDouble(){
 
-        double value=SCANNER.nextDouble();
-        SCANNER.nextLine();
-        return value;
-    }
+        try{
+            return SCANNER.nextDouble();
+        }finally {
+            SCANNER.nextLine();
+        }
+        }
 //
 //    public static void main(String[] args) {
 //        System.out.println("Enter an int:");
