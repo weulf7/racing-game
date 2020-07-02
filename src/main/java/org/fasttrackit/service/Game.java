@@ -7,9 +7,7 @@ import org.fasttrackit.domain.vehicle.Car;
 import org.fasttrackit.domain.vehicle.Vehicle;
 import org.fasttrackit.exception.InvalidOptionSelectedException;
 
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Game {
@@ -19,7 +17,11 @@ public class Game {
     }
 
     private Track[] tracks = new Track[3];
+    private Track selectedTrack ;
     private List<Mobile> competitors = new ArrayList<>();
+    private Set<Mobile> outOfRaceCompetitors=new HashSet<>();
+
+    private boolean winnerNotKnown=true;
 
     private StandardInputController controller = new StandardInputController();
 
@@ -29,12 +31,13 @@ public class Game {
 
         initializeTracks();
 
-        Track selectedTrack = getSelectedTrack();
-        System.out.println("You have selected: " + selectedTrack.getName());
+        selectedTrack = getSelectedTrack();
 
         initializeCompetitors();
 
-        playOneRound();
+        while(winnerNotKnown && outOfRaceCompetitors.size()<competitors.size()) {
+            playOneRound();
+        }
     }
 
     private void initializeCompetitors() {
@@ -59,8 +62,20 @@ public class Game {
         // enhanced for (for-each)
         for (Mobile competitor : competitors) {
             double speed = controller.getAccelerationSpeedFromUser();
+            if (!competitor.canMove()){
+                outOfRaceCompetitors.add(competitor);
+                continue;
+
+            }
 
             competitor.accelerate(speed,1);
+
+            if (competitor.getTotalTraveledDistance()>=selectedTrack.getLength()){
+                System.out.println("Congrats!The winner is:"+competitor.getName());
+                winnerNotKnown=false;
+
+                break;
+            }
         }
     }
 
