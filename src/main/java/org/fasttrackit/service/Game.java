@@ -7,6 +7,7 @@ import org.fasttrackit.domain.vehicle.Car;
 import org.fasttrackit.domain.vehicle.Vehicle;
 import org.fasttrackit.exception.InvalidOptionSelectedException;
 
+import java.security.NoSuchAlgorithmException;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -38,6 +39,9 @@ public class Game {
         while(winnerNotKnown && outOfRaceCompetitors.size()<competitors.size()) {
             playOneRound();
         }
+        if (winnerNotKnown){
+            System.out.println("Game over.There's no winner.");
+        }
     }
 
     private void initializeCompetitors() {
@@ -57,7 +61,9 @@ public class Game {
     }
 
     private void playOneRound() {
+        System.out.println();
         System.out.println("New round");
+        System.out.println();
 
         // enhanced for (for-each)
         for (Mobile competitor : competitors) {
