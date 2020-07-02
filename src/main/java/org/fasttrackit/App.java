@@ -1,5 +1,6 @@
 package org.fasttrackit;
 
+import org.fasttrackit.domain.vehicle.Vehicle;
 import org.fasttrackit.service.Game;
 
 import java.util.*;
@@ -10,6 +11,8 @@ public class App {
     public static void main(String[] args) {
         Game game = new Game();
         game.start();
+
+
 
 
 //        List<Integer>integerList;

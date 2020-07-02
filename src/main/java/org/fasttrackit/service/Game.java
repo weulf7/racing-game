@@ -12,6 +12,10 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Game {
 
+    public void createVehicle(Vehicle vehicle){
+        System.out.println("Creating vehicle:"+vehicle);
+    }
+
     private Track[] tracks = new Track[3];
     private List<Mobile> competitors = new ArrayList<>();
 
